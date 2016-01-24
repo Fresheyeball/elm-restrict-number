@@ -29,3 +29,8 @@ fromNum x =
 toNum : Negative number -> number
 toNum (Negative x) =
     x
+
+
+map : (number -> number) -> Negative number -> Maybe (Negative number)
+map f =
+    fromNum << f << toNum

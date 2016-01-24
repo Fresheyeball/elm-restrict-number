@@ -29,3 +29,33 @@ fromNum x =
 toNum : NonZero number -> number
 toNum (NonZero x) =
     x
+
+
+map : (number -> number) -> NonZero number -> Maybe (NonZero number)
+map f =
+    fromNum << f << toNum
+
+
+add : NonZero number -> NonZero number -> NonZero number
+add nz nz' =
+    toNum nz + toNum nz' |> NonZero
+
+
+subtract : NonZero number -> NonZero number -> Maybe (NonZero number)
+subtract nz nz' =
+    toNum nz - toNum nz' |> fromNum
+
+
+divideI : NonZero Int -> NonZero Int -> NonZero Int
+divideI nz nz' =
+    toNum nz // toNum nz' |> NonZero
+
+
+divideF : NonZero Float -> NonZero Float -> NonZero Float
+divideF nz nz' =
+    toNum nz / toNum nz' |> NonZero
+
+
+multiply : NonZero number -> NonZero number -> NonZero number
+multiply nz nz' =
+    toNum nz * toNum nz' |> NonZero
