@@ -1,4 +1,4 @@
-module NonZero (NonZero, fromNum, toNum) where
+module NonZero exposing (NonZero, fromNum, toNum)
 
 {-|
 NonZero numbers are numbers excluding zero.

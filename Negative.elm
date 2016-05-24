@@ -1,4 +1,4 @@
-module Negative (Negative, fromNum, toNum) where
+module Negative exposing (Negative, fromNum, toNum)
 
 {-|
 Negative numbers exclude zero.

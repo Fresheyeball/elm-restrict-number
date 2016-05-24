@@ -1,4 +1,4 @@
-module Even (Even, fromInt, toInt) where
+module Even exposing (Even, fromInt, toInt)
 
 {-|
 Because the constructor for `Even` is not exported, you can be

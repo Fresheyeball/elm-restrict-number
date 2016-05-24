@@ -1,4 +1,4 @@
-module Natural (Natural, fromInt, toInt) where
+module Natural exposing (Natural, fromInt, toInt)
 
 {-|
 Natural numbers are positive whole numbers excluding zero.

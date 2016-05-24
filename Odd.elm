@@ -1,4 +1,4 @@
-module Odd (Odd, fromInt, toInt) where
+module Odd exposing (Odd, fromInt, toInt)
 
 {-|
 Because the constructor for `Odd` is not exported, you can be
