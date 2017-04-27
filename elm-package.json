@@ -1,5 +1,5 @@
 {
-    "version": "2.1.0",
+    "version": "2.2.0",
     "summary": "Modules that enforce number restrictions",
     "repository": "https://github.com/Fresheyeball/elm-restrict-number.git",
     "license": "MIT",
@@ -14,7 +14,8 @@
         "Odd",
         "Even",
         "Whole",
-        "Prime"
+        "Prime",
+        "Convert"
     ],
     "dependencies": {
         "elm-lang/core": "5.0.0 <= v < 6.0.0"
