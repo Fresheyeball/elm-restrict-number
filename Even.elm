@@ -16,9 +16,7 @@ type Even
 {-| -}
 fromInt : Int -> Maybe Even
 fromInt x =
-    if
-        x % 2 == 0
-    then
+    if x % 2 == 0 then
         Just (Even x)
     else
         Nothing

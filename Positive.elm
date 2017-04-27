@@ -17,20 +17,23 @@ type Positive number
 {-| -}
 fromNum_ : comparable -> Maybe (Positive comparable)
 fromNum_ x =
-    if
-        x > 0
-    then
+    if x > 0 then
         Just (Positive x)
     else
         Nothing
 
+
 {-| -}
 fromInt : Int -> Maybe (Positive Int)
-fromInt = fromNum_
+fromInt =
+    fromNum_
+
 
 {-| -}
 fromFloat : Float -> Maybe (Positive Float)
-fromFloat = fromNum_
+fromFloat =
+    fromNum_
+
 
 {-| -}
 toNum : Positive number -> number

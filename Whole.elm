@@ -17,9 +17,7 @@ type Whole
 {-| -}
 fromInt : Int -> Maybe Whole
 fromInt x =
-    if
-        x >= 0
-    then
+    if x >= 0 then
         Just (Whole x)
     else
         Nothing

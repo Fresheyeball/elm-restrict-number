@@ -16,20 +16,23 @@ type Negative number
 
 fromNum_ : comparable -> Maybe (Negative comparable)
 fromNum_ x =
-    if
-        x < 0
-    then
+    if x < 0 then
         Just (Negative x)
     else
         Nothing
 
+
 {-| -}
 fromInt : Int -> Maybe (Negative Int)
-fromInt = fromNum_
+fromInt =
+    fromNum_
+
 
 {-| -}
 fromFloat : Float -> Maybe (Negative Float)
-fromFloat = fromNum_
+fromFloat =
+    fromNum_
+
 
 {-| -}
 toNum : Negative number -> number

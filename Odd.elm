@@ -16,9 +16,7 @@ type Odd
 {-| -}
 fromInt : Int -> Maybe Odd
 fromInt x =
-    if
-        x % 2 == 0
-    then
+    if x % 2 == 0 then
         Nothing
     else
         Just (Odd x)
